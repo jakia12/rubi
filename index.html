@@ -1,106 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DUCK BUBI</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./images/bottom.png" type="image/x-icon" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-      body {
-        font-family: "Inter", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-      }
-    </style>
-    <style>
-      .banner {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DUCK BUBI</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./images/bottom.png" type="image/x-icon" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+    body {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+  <style>
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+
+    .btn-custom {
+      background: none;
+      border: none;
+      color: black;
+    }
+
+    .ban-img {
+      width: 500px;
+    }
+
+    .about-text{
+      width: 800px;
+    }
+
+    @media screen and (max-width : 768px) {
+      .about-text {
         width: 100%;
-        height: auto;
       }
-      .btn-custom {
-        background: none;
-        border: none;
-        color: black;
-      }
-      .ban-img {
-        width: 500px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" alt="Logo" style="height: 80px" />
-      </a>
-    </nav>
+    }
+  </style>
+</head>
 
-    <!-- Banner Section -->
-    <div class="container mt-4">
-      <center>
-        <img
-          src="./images/header.png"
-          class="img-fluid banner ban-img"
-          alt="Banner Image"
-        />
-      </center>
+<body>
+  <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-light justify-content-between">
+    <a class="navbar-brand" href="#">
+      <img src="./images/logo.png" alt="Logo" style="height: 80px;">
+    </a>
+    <div class="mx-auto d-none d-md-block">
+      <img src="./images/header.png" alt="Center Image" style="height: 120px;">
     </div>
+  </nav>
 
-    <!-- Buttons Section -->
-    <div class="container text-center mt-4">
-      <h1>$BUBI - The Pepe of China</h1>
-      <div class="row mt-3">
-        <div class="col">
-          <a href="chartlink">
-            <button class="btn btn-custom">Chart</button>
-          </a>
-        </div>
-        <div class="col">
-          <a href="tglink">
-            <button class="btn btn-custom">Telegram</button>
-          </a>
-        </div>
-        <div class="col">
-          <a href="chartlink">
-            <button class="btn btn-custom">Chart</button>
-          </a>
-        </div>
-        <div class="col">
-          <a href="ttlink">
-            <button class="btn btn-custom">Twitter</button>
-          </a>
-        </div>
-        <div class="col">
-          <a href="moonlink">
-            <button class="btn btn-custom">Moontok</button>
-          </a>
-        </div>
-        <div class="col">
-          <a href="avelink">
-            <button class="btn btn-custom">Avedex</button>
-          </a>
-        </div>
+  <!-- Buttons Section -->
+  <div class="container text-center mt-4">
+    <h1>$BUBI - The Pepe of China</h1>
+    <div class="row mt-3">
+      <div class="col">
+        <a href="chartlink">
+          <button class="btn btn-custom">Chart</button>
+        </a>
+      </div>
+      <div class="col">
+        <a href="tglink">
+          <button class="btn btn-custom">Telegram</button>
+        </a>
+      </div>
+      
+      <div class="col">
+        <a href="ttlink">
+          <button class="btn btn-custom">Twitter</button>
+        </a>
+      </div>
+      <div class="col">
+        <a href="moonlink">
+          <button class="btn btn-custom">Moontok</button>
+        </a>
+      </div>
+      <div class="col">
+        <a href="avelink">
+          <button class="btn btn-custom">Avedex</button>
+        </a>
       </div>
     </div>
+  </div>
 
-    <!-- Second Image Section -->
-    <div class="container mt-4">
+  <!-- Second Image Section -->
+  <div class="container mt-4">
+    <center>
+      <img src="./images/bottom.png" class="img-fluid" alt="Second Image" />
+    </center>
+    <div style="margin-top: 60px;">
       <center>
-        <img src="./images/bottom.png" class="img-fluid" alt="Second Image" />
+        <p class="about-text">
+          Duck - $BUBI is a playful nod to a beloved meme that has captured our hearts and screens. This token celebrates
+          the charm and humor of a familiar meme we all enjoy.
+          <br> <br>
+          $BUBI is a meme coin with absolutely no intrinsic value or financial expectations. There’s no formal team or
+          roadmap—just pure, unadulterated fun. This coin is entirely useless and exists solely for entertainment
+          purposes. Quack on!
+        </p>
       </center>
     </div>
+  </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
